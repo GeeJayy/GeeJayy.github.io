@@ -176,12 +176,15 @@ footer{
     width:35px;
     height:35px;
     border-radius:50%;
-    border:3px solid #b9bfc4;
-    text-align:center
+    border:3px solid #7f8488;
+    text-align:center;
+
 }
 
 .top i{
-    color:#74808a
+    color:#20547e;
+    animation:pulsate 1s ease;
+    animation-iteration-count:infinite;
 }
 
 .social{
@@ -219,7 +222,7 @@ footer{
 }
 
 .btn-rounded-white:hover{
-    color:#3498db;
+    color:#23628b;
     background:#fff;
     text-decoration:none
 }
@@ -261,10 +264,21 @@ footer{
     height:100vh;
     min-height:500px;
     max-height:1080px;
-    background:url(../images/mountain_fractal.jpg);
+    background:url(../images/mountain_fractal.jpg) repeat-x;
     background-size:cover;
+    background-blend-mode: luminosity;
+    
     padding:15px;
     overflow:hidden
+}
+
+@keyframes slide{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-1692px,0,0);
+    }
 }
 
 #lead-content{
@@ -286,14 +300,16 @@ footer{
     font-size:5em;
     text-transform:uppercase;
     letter-spacing:0.05em;
-    line-height:0.9em
+    line-height:0.9em;
+    margin-bottom: 30px;
 }
 
 #lead-content h2{
-    color:#224434;
+    color:#173974bd;
     font-weight:500;
     font-size:2.25em;
-    margin-bottom:15px
+    margin-bottom:1px;
+    letter-spacing:0.0001em;
 }
 
 #lead-overlay{
@@ -304,8 +320,9 @@ footer{
     right:0;
     bottom:0;
     left:0;
-    background:rgba(121, 189, 147, 0.75);
-    z-index:1
+    background:rgba(121, 189, 147, 0.45);
+    z-index:1;
+    
 }
 
 #lead-down{
@@ -316,7 +333,7 @@ footer{
     text-align:center;
     z-index:10;
     bottom:15px;
-    color:#fff
+    color:rgb(255, 255, 255)
 }
 
 #lead-down span{
@@ -326,12 +343,12 @@ footer{
     width:35px;
     height:35px;
     border-radius:50%;
-    border:3px solid #a0cfee;
+    border:3px solid #81c5f1;
     text-align:center
 }
 
 #lead-down i{
-    animation:pulsate 1.5s ease;
+    animation:pulsate 1s ease;
     animation-iteration-count:infinite;
     padding-top:5px
 }
@@ -590,7 +607,7 @@ footer{
     display:inline-block;
     margin:7px;
     padding:5px 10px;
-    color:#374054;
+    color:#375449;
     background:#e4e4ea;
     list-style:none;
     cursor:default;
