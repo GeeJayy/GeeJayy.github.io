@@ -96,3 +96,20 @@
     });
 
 })(jQuery);
+console.log("RUnning")
+//When the user scrolls exectue myFunc
+window.onscroll = function() {myFunction()};
+var menu = document.getElementById("menu");
+var sticky = menu.offsetTop;//Get offset position of headerMenu
+
+//Add the sticky class to the headerMenu when you reach its scroll position. Remove "sticky" 
+//When you leave the scroll position
+function myFunction(){
+    //console.log("Scrolling");
+    if(window.pageYOffset>sticky){
+        menu.classList.add("sticky");
+    }
+    else{
+        menu.classList.remove("sticky");
+    }
+}

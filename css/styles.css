@@ -17,6 +17,23 @@ body{
     font-size:16px
 }
 
+
+.content{
+    padding: 5px;
+}
+
+.sticky{
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
 body.active{
     overflow:hidden;
     z-index:-1
@@ -302,6 +319,7 @@ footer{
     letter-spacing:0.05em;
     line-height:0.9em;
     margin-bottom: 30px;
+    z-index:3;
 }
 
 #lead-content h2{
@@ -310,6 +328,7 @@ footer{
     font-size:2.25em;
     margin-bottom:1px;
     letter-spacing:0.0001em;
+    z-index: 3;
 }
 
 #lead-overlay{
