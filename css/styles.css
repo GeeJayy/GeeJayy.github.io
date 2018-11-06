@@ -20,14 +20,17 @@ body{
 
 .content{
     padding: 5px;
+    width: 100%;
 }
 
 .sticky{
     position: fixed;
     display: block;
-    z-index: 1;
+    z-index: 100;
     top: 0;
-    width: 100%;
+    left: center;
+    margin-left: 385px;
+    width: 40%;
 }
 
 .sticky + .content {
@@ -132,7 +135,8 @@ header.sticky{
 }
 
 #menu.active{
-    display:block
+    display:block;
+    z-index:100;
 }
 
 #mobile-menu-open{
@@ -443,7 +447,8 @@ footer{
     border:1px solid #e6e6e6;
     padding:15px;
     border-radius:3px;
-    text-align:left
+    text-align:left;
+    z-index: 1;
 }
 
 .vtimeline-content h3{
@@ -451,27 +456,32 @@ footer{
     font-weight:300;
     color:#374054;
     display:inline-block;
-    margin:0
+    margin:0;
+    z-index: 1;
 }
 
 .vtimeline-content h4{
     font-size:1.2em;
     font-weight:300;
     color:#7e8890;
-    margin:0 0 15px 0
+    margin:0 0 15px 0;
+    z-index: 1;
+
 }
 
 .vtimeline-content p{
     color:#74808a;
     font-size:0.9em;
-    margin:0
+    margin:0;
+    z-index: 1;
 }
 
 .vtimeline-point{
     position:relative;
     display:block;
     vertical-align:top;
-    margin-bottom:30px
+    margin-bottom:30px;
+    z-index: 1;
 }
 
 .vtimeline-icon{
@@ -482,8 +492,9 @@ footer{
     background:#3498db;
     border-radius:50%;
     float:left;
-    z-index:99;
+    z-index:10;
     margin-left:280px
+
 }
 
 .vtimeline-icon i{
@@ -809,11 +820,13 @@ footer{
         overflow-y:auto;
         box-shadow:none;
         border-radius:0;
-        width:100%
+        width:100%;
+        z-index: 1000;
     }
     #menu li{
         display:block;
-        margin-bottom:10px
+        margin-bottom:10px;
+        z-index: 100;
     }
     #lead-content h1{
         font-size:2em
