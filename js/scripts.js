@@ -96,7 +96,7 @@
     });
 
 })(jQuery);
-console.log("RUnning")
+//console.log("RUnning")
 //When the user scrolls exectue myFunc
 window.onscroll = function() {myFunction()};
 var menu = document.getElementById("menu");
