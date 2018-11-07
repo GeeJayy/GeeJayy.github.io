@@ -27,10 +27,7 @@ body{
     position: fixed;
     display: block;
     z-index: 100;
-    top: 0;
-    left: center;
-    margin-left: 385px;
-    width: 40%;
+    width: 100%;
 }
 
 .sticky + .content {
