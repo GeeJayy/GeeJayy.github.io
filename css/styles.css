@@ -26,7 +26,7 @@ body{
 .sticky{
     position: fixed;
     display: block;
-    z-index: 100;
+    z-index: 999;
     width: 50%;
     left: 25%;
 }
@@ -297,7 +297,8 @@ footer{
     background-blend-mode: luminosity;
     
     padding:15px;
-    overflow:hidden
+    overflow:hidden;
+    z-index:9;
 }
 
 @keyframes slide{
@@ -315,11 +316,13 @@ footer{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    text-align:center
+    text-align:center;
+    z-index: 10;
 }
 
 #lead-content h1,#lead-content h2{
-    margin:0
+    margin:0;
+    z-index: 9;
 }
 
 #lead-content h1{
@@ -330,7 +333,7 @@ footer{
     letter-spacing:0.05em;
     line-height:0.9em;
     margin-bottom: 30px;
-    z-index:3;
+    z-index:9;
 }
 
 #lead-content h2{
@@ -339,7 +342,7 @@ footer{
     font-size:2.25em;
     margin-bottom:1px;
     letter-spacing:0.0001em;
-    z-index: 3;
+    z-index: 9;
 }
 
 #lead-overlay{
@@ -351,7 +354,7 @@ footer{
     bottom:0;
     left:0;
     background:rgba(121, 189, 147, 0.45);
-    z-index:1;
+    z-index:9;
     
 }
 
@@ -361,7 +364,7 @@ footer{
     right:0;
     width:100%;
     text-align:center;
-    z-index:10;
+    z-index:9;
     bottom:15px;
     color:rgb(255, 255, 255)
 }
@@ -374,13 +377,15 @@ footer{
     height:35px;
     border-radius:50%;
     border:3px solid #81c5f1;
-    text-align:center
+    text-align:center;
+    z-index: 9;
 }
 
 #lead-down i{
     animation:pulsate 1s ease;
     animation-iteration-count:infinite;
-    padding-top:5px
+    padding-top:5px;
+    z-index: 9;
 }
 
 @keyframes pulsate{
@@ -806,6 +811,15 @@ footer{
     }
     #about{
         text-align:center
+    
+    }
+    #headShot img{
+        border-radius: 50%;
+        width: 25%;
+        height:auto;
+        margin-left: 1px;
+        margin-right: 10px;
+
     }
     #about p{
         text-align:left
@@ -815,7 +829,7 @@ footer{
     header{
         position:fixed;
         display:none;
-        z-index:999;
+        z-index:998;
         animation:none;
         bottom:0;
         height:100%
